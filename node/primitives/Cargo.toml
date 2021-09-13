@@ -10,19 +10,19 @@ bounded-vec = "0.4"
 futures = "0.3.17"
 polkadot-primitives = { path = "../../primitives" }
 parity-scale-codec = { version = "2.0.0", default-features = false, features = ["derive"] }
-sp-core = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-application-crypto = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-consensus-vrf = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-consensus-babe = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-keystore = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-maybe-compressed-blob = { git = "https://github.com/paritytech/substrate", branch = "master" }
+sp-core = { git = "https://github.com/paritytech/substrate", branch = "bkchr-update-wasmtime-0.29.0" }
+sp-application-crypto = { git = "https://github.com/paritytech/substrate", branch = "bkchr-update-wasmtime-0.29.0" }
+sp-consensus-vrf = { git = "https://github.com/paritytech/substrate", branch = "bkchr-update-wasmtime-0.29.0" }
+sp-consensus-babe = { git = "https://github.com/paritytech/substrate", branch = "bkchr-update-wasmtime-0.29.0" }
+sp-keystore = { git = "https://github.com/paritytech/substrate", branch = "bkchr-update-wasmtime-0.29.0" }
+sp-maybe-compressed-blob = { git = "https://github.com/paritytech/substrate", branch = "bkchr-update-wasmtime-0.29.0" }
 polkadot-parachain = { path = "../../parachain", default-features = false }
 schnorrkel = "0.9.1"
 thiserror = "1.0.26"
 serde = { version = "1.0.130", features = ["derive"] }
 
 [target.'cfg(not(target_os = "unknown"))'.dependencies]
-zstd = "0.6.0"
+zstd = "0.9.0"
 
 [dev-dependencies]
 polkadot-erasure-coding = { path = "../../erasure-coding" }

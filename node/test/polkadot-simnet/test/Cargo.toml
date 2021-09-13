@@ -6,16 +6,16 @@ edition = "2018"
 
 [dependencies]
 # substrate primitives
-sp-core = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-blockchain = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "master" }
+sp-core = { git = "https://github.com/paritytech/substrate", branch = "bkchr-update-wasmtime-0.29.0" }
+sp-blockchain = { git = "https://github.com/paritytech/substrate", branch = "bkchr-update-wasmtime-0.29.0" }
+sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "bkchr-update-wasmtime-0.29.0" }
 
 # frame pallets
-system = { package = "frame-system", git = "https://github.com/paritytech/substrate", branch = "master" }
-balances = { package = "pallet-balances", git = "https://github.com/paritytech/substrate", branch = "master" }
+system = { package = "frame-system", git = "https://github.com/paritytech/substrate", branch = "bkchr-update-wasmtime-0.29.0" }
+balances = { package = "pallet-balances", git = "https://github.com/paritytech/substrate", branch = "bkchr-update-wasmtime-0.29.0" }
 
 # substrate client libs
-sc-client-api = { git = "https://github.com/paritytech/substrate", branch = "master" }
+sc-client-api = { git = "https://github.com/paritytech/substrate", branch = "bkchr-update-wasmtime-0.29.0" }
 
 # polkadot deps
 polkadot-simnet = { path = "../common" }
